@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="JonatanMazo.com" resolutions="1x" timestamp="1581292533696">
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="JonatanMazo.com" resolutions="1x" timestamp="1581299769685">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="master_a-master.css" crc="3787645151" ref="index"/>
-    <file name="index.css" crc="134577190" ref="index"/>
+    <file name="index.css" crc="3825491030" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -47,15 +47,40 @@
     <file name="u369-4.png" crc="185251409" ref="index"/>
     <file name="u375-4.png" crc="222475731" ref="index"/>
     <file name="yo-u412-fr.png" crc="3931310514" ref="index"/>
-    <file name="u472.png" crc="512585566" ref="index"/>
-    <file name="u472-r.png" crc="3882981097" ref="index"/>
-    <file name="u554.png" crc="4269162166" ref="index"/>
-    <file name="u554-r.png" crc="3862037286" ref="index"/>
-    <file name="u533.png" crc="327133533" ref="index"/>
-    <file name="u533-r.png" crc="4186811812" ref="index"/>
-    <file name="u512.png" crc="45434566" ref="index"/>
-    <file name="u512-r.png" crc="177349395" ref="index"/>
+    <file name="u472.png" crc="360154951" ref="index"/>
+    <file name="u472-r.png" crc="4122098010" ref="index"/>
+    <file name="u554.png" crc="3813067133" ref="index"/>
+    <file name="u554-r.png" crc="403909047" ref="index"/>
+    <file name="u533.png" crc="4064834036" ref="index"/>
+    <file name="u533-r.png" crc="4223586450" ref="index"/>
+    <file name="u512.png" crc="246726723" ref="index"/>
+    <file name="u512-r.png" crc="69114846" ref="index"/>
     <file name="u1567-9.png" crc="4008555320" ref="index"/>
+    <file name="papertexture.jpg" crc="148930317" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u1888-4.png" crc="375617281" ref="index"/>
+    <file name="u1900-4.png" crc="109762291" ref="index"/>
+    <file name="u2650-4.png" crc="65484571" ref="index"/>
+    <file name="u2347-4.png" crc="4004258116" ref="index"/>
+    <file name="u2641-4.png" crc="4114933047" ref="index"/>
+    <file name="u2409-4.png" crc="319694887" ref="index"/>
+    <file name="u2632-4.png" crc="159408933" ref="index"/>
+    <file name="u2427-4.png" crc="171709939" ref="index"/>
+    <file name="u2623-4.png" crc="225029548" ref="index"/>
+    <file name="u2445-4.png" crc="260404277" ref="index"/>
+    <file name="u2611-4.png" crc="4097814597" ref="index"/>
+    <file name="u2454-4.png" crc="193997063" ref="index"/>
+    <file name="u2602-4.png" crc="316944666" ref="index"/>
+    <file name="u2475-4.png" crc="159000556" ref="index"/>
+    <file name="u2338-4.png" crc="497527155" ref="index"/>
+    <file name="u2662-4.png" crc="66884983" ref="index"/>
+    <file name="u2777-4.png" crc="3769316740" ref="index"/>
+    <file name="u2744-41.png" crc="3837343465" ref="index"/>
+    <file name="u2747-13.png" crc="143052534" ref="index"/>
+    <file name="u2765-19.png" crc="3814369428" ref="index"/>
+    <file name="u1868.png" crc="3764850625" ref="index"/>
+    <file name="u1868-r.png" crc="135342261" ref="index"/>
   </folder>
-  <file name="index.html" crc="4111724030" seo="true" mt="1581292484897" redirect="true"/>
+  <file name="index.html" crc="250524167" seo="true" mt="1581299710028" redirect="true"/>
 </manifest>
