@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="JonatanMazo.com" resolutions="1x" timestamp="1581299769685">
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="JonatanMazo.com" resolutions="1x" timestamp="1581306311579">
   <folder name="css">
-    <file name="site_global.css" crc="444006867"/>
+    <file name="site_global.css" crc="4232781220"/>
     <file name="master_a-master.css" crc="3787645151" ref="index"/>
-    <file name="index.css" crc="3825491030" ref="index"/>
+    <file name="index.css" crc="4061158555" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -55,7 +55,6 @@
     <file name="u533-r.png" crc="4223586450" ref="index"/>
     <file name="u512.png" crc="246726723" ref="index"/>
     <file name="u512-r.png" crc="69114846" ref="index"/>
-    <file name="u1567-9.png" crc="4008555320" ref="index"/>
     <file name="papertexture.jpg" crc="148930317" ref="index">
       <caption webpage="index" alt=""/>
     </file>
@@ -81,6 +80,7 @@
     <file name="u2765-19.png" crc="3814369428" ref="index"/>
     <file name="u1868.png" crc="3764850625" ref="index"/>
     <file name="u1868-r.png" crc="135342261" ref="index"/>
+    <file name="u1567-10.png" crc="3865717720" ref="index"/>
   </folder>
-  <file name="index.html" crc="250524167" seo="true" mt="1581299710028" redirect="true"/>
+  <file name="index.html" crc="107014092" seo="true" mt="1581306192045" redirect="true"/>
 </manifest>
