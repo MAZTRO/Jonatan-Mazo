@@ -1,0 +1,80 @@
+/*
+  ========================================
+  Footer style
+  ========================================
+*/
+
+footer .principal
+{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    height: 100px;
+    width: 100%;
+    background-color: #666666;
+    color: #FFFFFF;
+}
+footer .Second .under_footer
+{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #222222;
+    color: #FFFFFF;
+    border: 0px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #D4145A;
+}
+
+.principal .info
+{
+    padding-left: 20px;
+}
+
+.principal .social
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 20px;
+    border: 0px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+
+.principal .social .twitter
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-image: url(../images/Twitter.png);
+    background-size: 50px;
+}
+
+.principal .social .github
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-image: url(../images/Github.png);
+    background-size: 50px;
+}
+
+.principal .social .linkedin
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-image: url(../images/Linkdin.png);
+    background-size: 50px;
+}

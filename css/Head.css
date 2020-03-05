@@ -1,0 +1,61 @@
+/*
+  ========================================
+  Header style
+  ========================================
+*/
+
+header
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #666666;
+    opacity: 70%;
+}
+
+header .Photo
+{
+    background-image: url(../images/Logo_32x32.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: 60px;
+}
+
+#Menu
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#Menu li
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#Menu li a
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#Menu li a:hover
+{
+    font-weight: bold;
+    color: #1B1464;
+}
