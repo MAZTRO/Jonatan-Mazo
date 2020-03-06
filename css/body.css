@@ -69,6 +69,17 @@ body .banner .intro #init
     color: #FFFFFF;
 }
 
+body .banner .intro #scroll_text
+{
+    color: #BBBBBB;
+}
+
+body .banner .intro #scroll_text:hover
+{
+    text-decoration: #FF005E;
+    color: #0992B3;
+}
+
 /*
   ----------------
   About style
