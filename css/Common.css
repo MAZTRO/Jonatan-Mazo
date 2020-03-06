@@ -12,19 +12,36 @@ body
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	padding: 0px;
     margin: 0px;
+    background-color: #666666;
 }
 
+/* ================================================*/
+/* ================== Scroll BAR===================*/
+/* ================================================*/
 
-body .Body
+body::-webkit-scrollbar
 {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 1400px;
-    background-color: #CCCCCC;
-    margin-bottom: 140px;
+    width: 15px;
+    background-color: #222222;
 }
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: #444444;
+}
+
+body::-webkit-scrollbar-thumb:hover
+{
+    border-radius: 10px;
+    background: #666666;
+}
+
+body::-webkit-scrollbar-thumb:active
+{
+    background-color: #D4145A;
+}
+
+/* ================================================*/
+/* ================== Scroll BAR===================*/
+/* ================================================*/

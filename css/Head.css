@@ -17,19 +17,35 @@ header
 	margin: 0px;
     padding: 0px;
     border: 0px;
-    background-color: #666666;
-    opacity: 70%;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #19D3FF;
+    background-color: transparent;
+    transition: background-color 250ms;
 }
 
-header .Photo
+
+
+header #Logo
 {
-    background-image: url(../images/Logo_32x32.png);
     width: 60px;
     height: 60px;
-    background-position: center;
-    background-size: 60px;
+    opacity: 100%;
+    filter: saturate(130%);
 }
 
+header #Logo:hover
+{
+    filter: saturate(100%);
+    opacity: 90%;
+}
+
+
+/*
+  -------------------
+  MENU
+  -------------------
+*/
 #Menu
 {
     display: flex;
@@ -48,8 +64,9 @@ header .Photo
 
 #Menu li a
 {
+    text-shadow: -1px 1px 2px #111111;
     font-size: 14px;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
 }
@@ -57,5 +74,10 @@ header .Photo
 #Menu li a:hover
 {
     font-weight: bold;
-    color: #1B1464;
+    color: #19D3FF;
+}
+
+.header_scroll
+{
+    background-color: #000000;
 }

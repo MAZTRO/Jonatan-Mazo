@@ -1,0 +1,131 @@
+/*
+  ========================================
+  Body style
+  ========================================
+*/
+
+
+/*
+  ----------------
+  Banner style
+  ----------------
+*/
+
+body .banner
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 7;
+    width: 100%;
+    height: 900px;
+    background-color: #111111;
+}
+
+body .banner .backgroud
+{
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    width: 100%; height: 900px;
+    opacity: 3%;
+}
+
+body .banner .photo
+{
+    padding-right: 5%;
+}
+
+body .banner .photo .me img
+{
+    z-index: 20;
+    padding: 10px;
+    width: 260px; height: 350px;
+    border-style: solid;
+    border-color: #0992B3;
+    border-bottom: 10px;
+    border-top: 10px;
+    border-radius: 50px;
+}
+
+body .banner .intro
+{
+    border-left: 1px solid;
+    border-color: #FF005E;
+    padding: 5%;
+    padding-left: 3%;
+    padding-right: 0%;
+}
+
+body .banner .intro #init
+{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/*
+  ----------------
+  About style
+  ----------------
+*/
+body .about
+{
+    z-index: 6;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+    background-color: tomato;
+}
+
+/*
+  ----------------
+  Skills style
+  ----------------
+*/
+body .skills
+{
+    z-index: 5;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+    background-color: green;
+}
+
+/*
+  ----------------
+  Portfolio style
+  ----------------
+*/
+body .portfolio
+{
+    z-index: 4;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+    background-color: hotpink;
+}
+
+/*
+  ----------------
+  Contact style
+  ----------------
+*/
+body .contact
+{
+    z-index: 3;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 140px;
+    background-color: rgb(195, 105, 255);
+}

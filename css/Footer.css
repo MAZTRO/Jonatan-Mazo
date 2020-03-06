@@ -14,7 +14,7 @@ footer .principal
     bottom: 40px;
     height: 100px;
     width: 100%;
-    background-color: #666666;
+    background-color: #222222;
     color: #FFFFFF;
 }
 footer .Second .under_footer
@@ -27,7 +27,7 @@ footer .Second .under_footer
     bottom: 0px;
     height: 40px;
     width: 100%;
-    background-color: #222222;
+    background-color: #000000;
     color: #FFFFFF;
     border: 0px;
     border-top: 1px;
@@ -50,31 +50,50 @@ footer .Second .under_footer
     border-right: 1px;
     border-style: solid;
     border-color: #FFFFFF;
+    opacity: 100%;
 }
 
-.principal .social .twitter
+.principal .social #twitter img
 {
     height: 50px;
     width: 50px;
     margin: 10px;
-    background-image: url(../images/Twitter.png);
-    background-size: 50px;
+    opacity: 70%;
 }
-
-.principal .social .github
+.principal .social #twitter img:hover
 {
     height: 50px;
     width: 50px;
     margin: 10px;
-    background-image: url(../images/Github.png);
-    background-size: 50px;
+    opacity: 100%;
 }
 
-.principal .social .linkedin
+.principal .social #github img
 {
     height: 50px;
     width: 50px;
     margin: 10px;
-    background-image: url(../images/Linkdin.png);
-    background-size: 50px;
+    opacity: 70%;
+}
+.principal .social #github img:hover
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    opacity: 100%;
+}
+
+.principal .social #linkedin img
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    opacity: 70%;
+}
+.principal .social #linkedin img:hover
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    opacity: 100%;
 }
