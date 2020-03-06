@@ -32,8 +32,9 @@ body .banner .backgroud
     position: absolute;
     top: 0px;
     background-image: url(../images/bg.jpg);
+    background-size: 100%;
     background-position: center;
-    width: 100%; height: 900px;
+    width: 100%; height: 100%;
     opacity: 3%;
 }
 
@@ -56,6 +57,7 @@ body .banner .photo .me img
 
 body .banner .intro
 {
+    z-index: 100;
     border-left: 1px solid;
     border-color: #FF005E;
     padding: 5%;
@@ -67,17 +69,25 @@ body .banner .intro #init
 {
     font-size: 16px;
     color: #FFFFFF;
+    text-align: -webkit-match-parent;
 }
 
-body .banner .intro #scroll_text
+body .banner .intro #init a
 {
-    color: #BBBBBB;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FF005E;
 }
 
-body .banner .intro #scroll_text:hover
+body .banner #scroll_text .abt
 {
-    text-decoration: #FF005E;
-    color: #0992B3;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+body .banner #scroll_text .abt:hover
+{
+    color: #FF005E;
 }
 
 /*

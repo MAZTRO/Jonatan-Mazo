@@ -8,6 +8,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/scroll.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/Footer.css">
     <link rel="stylesheet" type="text/css" href="css/Head.css">
@@ -22,11 +23,11 @@
             <img src="images/J Logo 60x60.png" alt="Home" />
         </a>
         <ul id="Menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#ab">About me</a></li>
-            <li><a href="#Sk">Skills</a></li>
-            <li><a href="#Pt">Portfolio</a></li>
-            <li><a href="#Cm">Contact me</a></li>
+            <li><a href="#" id="HOME">Home</a></li>
+            <li><a href="#ab" id="ABOUT">About me</a></li>
+            <li><a href="#Sk" id="SKILLS">Skills</a></li>
+            <li><a href="#Pt" id="PORT">Portfolio</a></li>
+            <li><a href="#Cm" id="CONTACT">Contact me</a></li>
         </ul>
     </header>
 
@@ -37,15 +38,15 @@
                 <img src="images/Me.jpg" alt="me">
             </div>
         </section>
-        <section class="intro">
+        <article class="intro">
             <p id="init">
                 Hi, i'm Jonatan Mazo<br/>
                 I'm a creative developer in Fron End and Back End.<br/>
-                Full Stack Software Engineer at Holberton Scool Colombia.<br/><br/>
+                Full Stack Software Engineer at <a href="https://www.holbertonschool.com" title="Holberton" target="_blank"> Holberton School Colombia.</a><br/><br/>
 
-                <p id="scroll_text">Please scroll down for more.</p>
+                <p id="scroll_text"><a href="#ab" class="abt">Click here for more info.</a></p>
             </p>
-        </section>
+        </article>
         <div class="backgroud">
         </div>
     </div>
