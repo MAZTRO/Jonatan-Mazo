@@ -1,13 +1,6 @@
 $(document).ready(function()
 {
     //Click event
-    $(".abt").click(function(evento)
-    {
-      //Go to px position slowly
-      $("html,body").animate({scrollTop:830}, "slow");
-    });
-
-    //Click event
     $("#HOME").click(function(evento)
     {
       //Go to px position slowly
@@ -32,14 +25,14 @@ $(document).ready(function()
     $("#PORT").click(function(evento)
     {
       //Go to px position slowly
-      $("html,body").animate({scrollTop:2230}, "slow");
+      $("html,body").animate({scrollTop:2430}, "slow");
     });
 
     //Click event
     $("#CONTACT").click(function(evento)
     {
       //Go to px position slowly
-      $("html,body").animate({scrollTop:2930}, "slow");
+      $("html,body").animate({scrollTop:3130}, "slow");
     });
 
     //Click event
@@ -47,5 +40,19 @@ $(document).ready(function()
     {
       //Go to px position slowly
       $("html,body").animate({scrollTop:0}, "slow");
+    });
+
+    //Click event
+    $("#DOWN").click(function(evento)
+    {
+    //Go to px position slowly
+    $("html,body").animate({scrollTop:830}, "slow");
+    });
+
+    //Click event
+    $("#UP").click(function(evento)
+    {
+    //Go to px position slowly
+    $("html,body").animate({scrollTop:0}, "slow");
     });
 });

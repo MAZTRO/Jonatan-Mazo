@@ -2,7 +2,7 @@ $(document).ready(function()
 {
     $(window).scroll(function()
     {
-        if ($(window).scrollTop() > 50)
+        if ($(window).scrollTop() > 250)
         {
             $("header").addClass("header_scroll");
         }
