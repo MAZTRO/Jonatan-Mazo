@@ -23,7 +23,7 @@ body .banner
     justify-content: center;
     z-index: 7;
     width: 100%;
-    height: 900px;
+    height: 100vh;
     background-color: #111111;
 }
 
@@ -118,16 +118,16 @@ body .about
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: #FFFFFF;
 }
 
 body .about #Title
 {
     position: absolute;
-    top: 50px;
+    top: 15vh;
     left: 10%;
-    font-size: 48px;
+    font-size: 4vh;
     color: #111111;
     border: 0px;
     border-bottom: 2px;
@@ -138,20 +138,24 @@ body .about #Title
 
 body .about .About_me #text
 {
+    position: relative;
+    top: 10vh;
     text-align: center;
-    font-size: 24px;
+    font-size: 2.5vh;
     color: #111111;
 }
 
 body .about .About_me #Phrase
 {
+    position: relative;
+    top: 100px;
     text-align: center;
-    font-size: 20px;
+    font-size: 2.5vh;
     color: #FF005E;
     border: 0px;
     border-bottom: 2px;
     border-style: solid;
-    padding-bottom: 50px;
+    padding-bottom: 10vh;
     border-color: #FF005E;
 }
 
@@ -166,7 +170,7 @@ body .skills
     position: relative;
     top: 0px;
     width: 100%;
-    height: 900px;
+    height: 100vh;
     background-color: #3D9DB3;
 }
 
@@ -181,7 +185,7 @@ body .portfolio
     position: relative;
     top: 0px;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: hotpink;
 }
 
@@ -196,7 +200,7 @@ body .contact
     position: relative;
     top: 0px;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     margin-bottom: 140px;
     background-color: rgb(195, 105, 255);
 }
