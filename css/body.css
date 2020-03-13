@@ -127,7 +127,7 @@ body .about #Title
     position: absolute;
     top: 15vh;
     left: 10%;
-    font-size: 4vh;
+    font-size: 48px;
     color: #111111;
     border: 0px;
     border-bottom: 2px;
@@ -139,24 +139,26 @@ body .about #Title
 body .about .About_me #text
 {
     position: relative;
-    top: 10vh;
+    top: 10px;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 25px;
     color: #111111;
+    margin: 0px;
 }
 
 body .about .About_me #Phrase
 {
     position: relative;
-    top: 100px;
+    top: 3vh;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 25px;
     color: #FF005E;
     border: 0px;
     border-bottom: 2px;
     border-style: solid;
     padding-bottom: 10vh;
     border-color: #FF005E;
+    margin: 0px;
 }
 
 /*
