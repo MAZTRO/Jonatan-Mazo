@@ -7,7 +7,7 @@ function RadialProgress(container,cfg){
 	container.appendChild(nc);
 	container=nc;
 	if(!cfg) cfg={};
-	this.colorBg=cfg.colorBg==undefined?"#0992B3":cfg.colorBg;
+	this.colorBg=cfg.colorBg==undefined?"#444444":cfg.colorBg;
 	this.colorFg=cfg.colorFg==undefined?"#FFFFFF":cfg.colorFg;
 	this.colorText=cfg.colorText==undefined?"#222222":cfg.colorText;
 	this.indeterminate=cfg.indeterminate==undefined?false:cfg.indeterminate;
