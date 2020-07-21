@@ -1,115 +1,151 @@
+/* Variables of colors */
+:root {
+  --middle-blue: #162447;
+  --dark-blue: #1b1b2f;
+  --light-blue: #1f4068;
+  --magenta: #e43f5a;
+}
+
+
 /*
-  ========================================
-  Footer style
-  ========================================
+========================================
+Footer style
+========================================
 */
 
-footer .principal
-{
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 40px;
-    height: 100px;
-    width: 100%;
-    background-color: #222222;
-    color: #FFFFFF;
-}
-footer .Second .under_footer
-{
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0px;
-    height: 40px;
-    width: 100%;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 0px;
-    border-top: 1px;
-    border-style: solid;
-    border-color: #D4145A;
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+  height: 150px;
+
+  background-color: var(--dark-blue);
+  z-index: -1;
 }
 
-.principal .info
-{
-    padding-left: 20px;
+p {
+  color: #FFFFFF;
+  margin: auto;
+
+  text-align: center;
+  line-height: 30px;
 }
 
-.principal .social
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-right: 20px;
-    border: 0px;
-    border-right: 1px;
-    border-style: solid;
-    border-color: #FFFFFF;
-    opacity: 100%;
+footer .social {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: 10% 20% 60% 10%;
+
+  max-width: 360px;
+  width: 20%;
+  height: 100%;
+
+  margin: auto 50px;
+
+  background-color: var(--dark-blue);
+
+  border: 0px;
 }
 
-.principal .social #twitter img
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 70%;
-}
-.principal .social #twitter img:hover
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 100%;
+footer .Sign {
+  display: flex;
+
+  max-width: 360px;
+  width: 50%;
+  height: 100%;
+
+  margin: auto 50px;
+
+  background-color: var(--dark-blue);
 }
 
-.principal .social #github img
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 70%;
-}
-.principal .social #github img:hover
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 100%;
+.social p {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+
+  font-size: 16px;
 }
 
-.principal .social #linkedin img
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 70%;
-}
-.principal .social #linkedin img:hover
-{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    opacity: 100%;
+.social a {
+  margin: auto;
 }
 
-.principal .Up
-{
-    position: absolute;
-    top: 32px;
-    right: 100px;
-    opacity: 70%;
+.social .btn {
+  display: flex;
+
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+
+  border-radius: 50%;
+  background: #1b1b2f;
+  box-shadow:  3px 3px 5px #161627,
+              -3px -3px 5px #202037;
 }
 
-.principal .Up:hover
-{
-    position: absolute;
-    top: 33px;
-    right: 100px;
-    opacity: 100%;
+.social .btn:active {
+  transform: scale(0.95);
+}
+
+.social .twitter {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.social .github {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.social .linkedin {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.social .btn .img {
+  width: 40px;
+  height: 40px;
+
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+
+  border-radius: 50%;
+}
+
+.social .btn .img:hover {
+  box-shadow: inset 2px 2px 5px #161627,
+              inset -2px -2px 5px #202037;
+}
+
+.social .twitter .btn .Twitter {
+  background-image: url('../images/Twitter.png');
+}
+
+.social .twitter .btn .Twitter:hover {
+  background-image: url('../images/Twitter_hover.png');
+}
+
+.social .github .btn .Github {
+  background-image: url('../images/Github.png');
+}
+
+.social .github .btn .Github:hover {
+  background-image: url('../images/Github_hover.png');
+}
+
+.social .linkedin .btn .Linkedin {
+  background-image: url('../images/linkedin.png');
+}
+
+.social .linkedin .btn .Linkedin:hover {
+  background-image: url('../images/linkedin_hover.png');
 }

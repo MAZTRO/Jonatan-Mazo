@@ -1,147 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <!-- HEAD -->
+  <!-- HEAD -->
 <head>
-    <meta charset="utf-8">
-    <title>Jonatan Mazo</title>
-    <link rel="icon" type="image/png" href="images/Logo_32x32.png" sizes="32x32">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Jonatan Mazo</title>
+  <link rel="icon" type="image/png" href="images/Logo_32x32.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/radialprogress.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/cirBar.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/Footer.css">
+  <link rel="stylesheet" type="text/css" href="css/Header.css">
+  <link rel="stylesheet" type="text/css" href="css/Common.css">
+  <link rel="stylesheet" type="text/css" href="css/body.css">
 
-    <link rel="stylesheet" type="text/css" href="css/Footer.css">
-    <link rel="stylesheet" type="text/css" href="css/Head.css">
-    <link rel="stylesheet" type="text/css" href="css/Common.css">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <script src="scripts/menu.js" async></script>
+  <script src="scripts/scrolling.js" async></script>
 </head>
 
 <body>
-    <!-- HEADER-->
-    <header>
-        <a id="Logo" title="Home" href="#">
-            <img src="images/J Logo 60x60.png" alt="Home" height="45px">
-        </a>
-        <ul id="Menu">
-            <li><a href="#home" id="HOME">Home</a></li>
-            <li><a href="#ab" id="ABOUT">About me</a></li>
-            <li><a href="#Sk" id="SKILLS">Skills</a></li>
-            <li><a href="#Pt" id="PORT">Portfolio</a></li>
-            <li><a href="#Cm" id="CONTACT">Contact me</a></li>
-        </ul>
-    </header>
-
-    <!-- SECTIONS -->
-
-    <!-- BANNER -->
-    <div class="banner" id="home">
-        <section class="photo">
-            <div class="me">
-                <img src="images/Me.jpg" alt="me">
-            </div>
-        </section>
-        <article class="intro">
-            <p id="init">
-                Hi, i'm Jonatan Mazo<br/>
-                I'm a creative developer in Fron End and Back End.<br/>
-                Full Stack Software Engineer at <a href="https://www.holbertonschool.com" title="Holberton" target="_blank"> Holberton School Colombia.</a><br/><br/>
-            </p>
-        </article>
-        <div class="Down">
-            <a href="#ab" id="DOWN">
-                <img src="images/Arrow D.png" alt="Down" width="25px">
-            </a>
-        </div>
-        <div class="backgroud">
-        </div>
+  <!-- HEADER-->
+  <header>
+    <div class="Photo"></div>
+    <div class="imgPhoto"></div>
+    <div class="Titles">
+      <h2>Jonatan Mazo</h2>
+      <h1>Full Stack Engimeer</h1>
     </div>
+    <div class="top"></div>
 
-    <!-- ABOUT ME -->
-    <div class="about" id="ab">
-        <div>
-            <p id="Title">
-               <b>About me</b>
-            </p>
-        </div>
-        <div class="About_me">
-            <p id="text">
-                I am a person focused on what I do,<br/>
-                I like to have everything organized both on my virtual desktop and in the physical,<br/>
-                working in a clean place is important to me, I like listening to music, I even play an instrument,<br/>
-                I like sports and having a healthy life, I don't like drinking alcohol or smoking,<br/>
-                I really like studying, learning new things and challenging myself to improve some weakness that I have.<br/>
-                I like to share what I know, I am a fan of the phrase that says paraphrasing:<br/>
-                <p id="Phrase">"You learn more when you teach your peers."</p>
-            </p>
-        </div>
-    </div>
+    <div id="Menu">
+      <ul class="ulMenu">
+        <li>
+          <a class="btnBanner" @mouseover="banner = true" @mouseleave="banner = false" href="#banner">
+            <div class="icon"><div class="imgIcon bannerIcon"></div></div>
+            <transition name="fade">
+              <ul v-if="banner" @click="banner = true">
+                <p>About me</p>
+              </ul>
+            </transition>
+          </a>
+        </li>
 
-    <!-- SKILLS -->
-    <div class="skills" id="Sk">
-        <div class="container">
-            <div>
-                <p id="Title">
-                <b>My Skills</b>
-                </p>
-            </div>
-            <div class="Sk" id="html_skill"></div>
-            <div class="Sk" id="css_skill"></div>
-            <div class="Sk" id="JS_skill"></div>
-            <div class="Sk" id="C/C++_skill"></div>
-            <div class="Sk" id="Python_skill"></div>
-            <div class="Sk" id="Git_skill"></div>
-            <div class="Sk" id="Linux_skill"></div>
-            <div class="Sk" id="3d_skill"></div>
-            <p id="info">
-                <b>Aqui va la descripcion de mis skills</b>
-            </p>
-        </div>
-    </div>
+        <li>
+          <a class="btnExperiences" @mouseover="experiences = true" @mouseleave="experiences = false" href="#experiences">
+            <div class="icon"><div class="imgIcon experiencesIcon"></div></div>
+            <transition name="fade">
+              <ul v-if="experiences" @click="experiences = true">
+                <p>Experience</p>
+              </ul>
+            </transition>
+          </a>
+        </li>
 
-    <!-- PORTFOLIO -->
-    <div class="portfolio" id="Pt">
-    </div>
+        <li>
+          <a class="btnAbilities" @mouseover="abilities = true" @mouseleave="abilities = false" href="#abilities">
+            <div class="icon"><div class="imgIcon abilitiesIcon"></div></div>
+            <transition name="fade">
+              <ul v-if="abilities" @click="abilities = true">
+                <p>Skills</p>
+              </ul>
+            </transition>
+          </a>
+        </li>
 
-    <!-- CONTACT -->
-    <div class="contact" id="Cm">
+        <li>
+          <a class="btnProject" @mouseover="project = true" @mouseleave="project = false" href="#projects">
+            <div class="icon"><div class="imgIcon projectIcon"></div></div>
+            <transition name="fade">
+              <ul v-if="project" @click="project = true">
+                <p>Projects</p>
+              </ul>
+            </transition>
+          </a>
+        </li>
+
+        <li>
+          <a class="btnContact" @mouseover="contact = true" @mouseleave="contact = false" href="#contact">
+            <div class="icon"><div class="imgIcon contactIcon"></div></div>
+            <transition name="fade">
+              <ul v-if="contact" @click="contact = true">
+                <p>Contact me</p>
+              </ul>
+            </transition>
+          </a>
+        </li>
+      </ul>
     </div>
+  </header>
+
+  <!-- BANNER ME -->
+  <div id="banner" class="sect banner">
+    <div class="collage">
+      <div class="img Sony"></div>
+      <div class="img sonyBtn"></div>
+      <div class="img Code"></div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCES -->
+  <div id="experiences" class="sect experiences"></div>
+
+  <!-- ABILITIES -->
+  <div id="abilities" class="sect abilities"></div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="sect Projects"></div>
+
+  <!-- CONTACT ME -->
+  <div id="contact" class="sect contact"></div>
 </body>
 
-<!-- FOOTER -->
-<footer>
-    <section class="principal">
-        <div class="social">
-            <p>More info:</p>
-            <a id="github" title="Github" href="https://github.com/MAZTRO" target="_blank">
-                <img src="images/Github.png" alt="Github" />
-            </a>
-            <a id="twitter" title="Twitter" href="https://twitter.com/JonatanRMC" target="_blank">
-                <img src="images/Twitter.png" alt="Twitter" />
-            </a>
-            <a id="linkedin" title="Linkedin" href="https://www.linkedin.com/in/jonatan-ricardo-mazo-castro-75633390/" target="_blank">
-                <img src="images/linkedin.png" alt="Linkedin" />
-            </a>
+  <!-- FOOTER -->
+  <footer>
+    <div class="social">
+      <p>More about me:</p>
+      <a class="twitter" href="https://twitter.com/JonatanRMC" target="_blank">
+        <div class="btn">
+          <div class="img Twitter"></div>
         </div>
-        <div class="info">
-            <p>Full-Stack Software Engineer</p>
+      </a>
+      <a class="github" href="https://github.com/MAZTRO" target="_blank">
+        <div class="btn">
+          <div class="img Github"></div>
         </div>
-        <div class="Up">
-            <a href="#" id="UP">
-                <img src="images/Arrow Up.png" alt="Down" width="30px">
-            </a>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/jonatanrmc/" target="_blank">
+        <div class="btn">
+          <div class="img Linkedin"></div>
         </div>
-    </section>
-    <section class="Second">
-        <div class="under_footer">
-            <p>© <span id="datetime"></span> Jonatan Mazo </p>
-            <script>
-                var dt = new Date();
-                document.getElementById("datetime").innerHTML = dt.getFullYear();
-            </script>
-        </div>
-    </section>
-</footer>
+      </a>
+    </div>
+    <div class="Sign">
+      <p>Jonatan Mazo | Full Stack Engineer <br> © {{ time }}</p>
+    </div>
+  </footer>
 </html>
