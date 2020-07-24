@@ -29,7 +29,7 @@ for (btn of btnsList) {
       scroll.animateScroll(anchor);
     }
 
-    else if (btnClass === 'btnExperiences') {
+    else if (btnClass === 'btnExperiences' || btnClass === 'arrow') {
       const anchor = document.querySelector('#experiences');
       scroll.animateScroll(anchor);
     }

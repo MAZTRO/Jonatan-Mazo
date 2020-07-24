@@ -12,12 +12,6 @@
   ========================================
 */
 
-/*
-  ----------------
-  about me section style
-  ----------------
-*/
-
 body .sect {
   position: relative;
   top: 0px;
@@ -28,6 +22,12 @@ body .sect {
   height: 100vh;
 }
 
+/*
+  ----------------
+  about me section style
+  ----------------
+*/
+
 body .banner {
   background-color: #FFF;
 
@@ -35,23 +35,111 @@ body .banner {
   justify-content: center;
 }
 
-body .banner .collage {
-  width: 60%;
-  height: 60px;
+body .banner .draw {
+  position: relative;
+  left: 10%;
 
-  background-color: #1fccbe;
-  border-radius: 20px;
+  margin: auto 0px;
+  background-color: transparent;
+
+  z-index: 1;
 }
 
-body .banner .collage .img {
+body .banner .circle {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  border: #EEE solid 50px;
+
+  background-color: var(--middle-blue);
+}
+
+
+body .banner .phrase {
+  width: 60%;
+  height: 50%;
+
+  margin: auto;
+  margin-left: 0px;
+  padding: 5%;
+
+  background-color: #EEE;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+
+body .banner .phrase p {
+  text-align: left;
+  font-size: 18px;
+
+  margin: 20px;
+
+  color: var(--middle-blue);
+}
+
+body .banner a {
+  position: absolute;
+  bottom: 50px;
+
   width: 60px;
   height: 60px;
 
-  margin: 20px;
-  padding: 0px;
+  background-color: #FFF;
 
-  background-color: #1f4068;
-  border-radius: 10px;
+  animation: arrow 1s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0px, 5px);
+  }
+}
+
+body .banner .arrow div {
+  border-radius: 5px;
+  background-color: var(--magenta);
+}
+
+body .banner .arrow .center {
+  position: relative;
+  top: 10px;
+  left: 25px;
+
+  width: 5px;
+  height: 35px;
+}
+
+body .banner .arrow .left {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+
+  width: 5px;
+  height: 25px;
+
+  transform: rotate(-30deg);
+}
+
+body .banner .arrow .right {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+
+  width: 5px;
+  height: 25px;
+
+  transform: rotate(30deg);
 }
 
 /*
