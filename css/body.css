@@ -6,36 +6,49 @@
   --yellow: #EBDF17;
 }
 
-.Body {
+#Body {
   width: 100%;
 }
 
-.Body .cover {
+
+/* ============= */
+/* Cover section */
+/* ============= */
+
+#Body .cover {
   background-color: black;
 
   display: flex;
+  justify-content: center;
 
-  position: absolute;
+  position: relative;
   top: 0;
 
-  z-index: -1;
+  z-index: 1;
 
   height: 100vh;
   width: 100%;
 }
 
-.Body .cover .Me {
+#Body .cover .Me {
+  position: relative;
+
+  margin: auto;
+  margin-bottom: 0;
+
   width: 50%;
-  height: 100%;
-  /* background-color: chartreuse; */
+  height: 90%;
+
+  max-width: 900px;
+
   background-image: url('../images/Jonatan\ small.png');
   background-position: bottom;
-  background-size: contain;
+  background-size: 70%;
   background-repeat: no-repeat;
 }
 
-.Body .cover .title {
-  color: #FFF;
+#Body .cover .title {
+  color: #CCC;
 
   width: 50%;
   height: 100vh;
@@ -45,18 +58,102 @@
   flex-flow: column;
 }
 
-.Body .cover .title .myself {
+#Body .cover .title .myself {
   font-size: 3.5em;
   font-weight: 500;
 
   width: 100%;
 }
 
-.Body .cover .title .slogan {
+#Body .cover .title .slogan {
   width: 90%;
 
   margin-top: 0px;
 
   font-size: 1.7em;
   font-weight: 100;
+}
+
+#Body .cover a {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  position: absolute;
+  bottom: 0;
+}
+
+#Body .cover .arrowD {
+  width: 60px;
+  height: 60px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  position: absolute;
+  bottom: 0;
+}
+
+#Body .cover .arrowD p {
+  position: absolute;
+  top: 0;
+
+  margin: 0;
+  margin-top: 5px;
+
+  color: var(--magenta-light);
+}
+
+#Body .cover .arrowD span {
+  position: absolute;
+  bottom: 0;
+
+  width: 3px;
+  height: 35px;
+
+  background-color: var(--magenta-light);
+}
+
+
+/* ============= */
+/* About section */
+/* ============= */
+
+#Body .about {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #FFF;
+
+  position: relative;
+  top: 0;
+
+  display: flex;
+}
+
+#Body .about .container {
+  width: 80%;
+  height: 80%;
+
+  margin: auto;
+
+  display: flex;
+  flex-flow: column;
+  color: #444;
+}
+
+#Body .about .container h2 {
+  font-size: 4em;
+  font-weight: 500;
+
+  color: #111;
+
+  height: 60px;
+}
+
+#Body .about .container .description {
+  font-size: 2em;
 }

@@ -11,6 +11,10 @@ header {
   height: 70px;
 
   background-color: black;
+
+  z-index: 10;
+  position: fixed;
+  top: 0;
 }
 
 header ul, li, a {
@@ -45,7 +49,10 @@ header .container .logo {
   margin: auto;
   margin-left: 0;
 
-  background-color: #EB1741;
+  background-image: url('../images/J\ Logo\ 60x60.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
 }
 
 header .container .menu {
@@ -92,7 +99,7 @@ header .container .menu .sidenav {
   width: 0;
 
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   top: 0;
   right: 0;
 
