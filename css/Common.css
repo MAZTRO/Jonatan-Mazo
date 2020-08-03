@@ -1,9 +1,9 @@
 /* Variables of colors */
 :root {
-    --middle-blue: #162447;
-    --dark-blue: #1b1b2f;
-    --light-blue: #1f4068;
-    --magenta: #e43f5a;
+    --blue-light: #10769E;
+    --magenta-light: #EB1741;
+    --blue-foo: #01A8EB;
+    --yellow: #EBDF17;
 }
 
 
@@ -15,17 +15,17 @@
 
 body
 {
-    z-index: 2;
-	color: #484848;
+	color: #888;
     font-size: 14px;
 
-	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
 
     padding: 0px;
     margin: 0px;
-    margin-bottom: 150px;
 
     background-color: #FFF;
+
+    transition: .3s;
 }
 
 /* ================================================*/

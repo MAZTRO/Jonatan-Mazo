@@ -1,184 +1,62 @@
 /* Variables of colors */
 :root {
-  --middle-blue: #162447;
-  --dark-blue: #1b1b2f;
-  --light-blue: #1f4068;
-  --magenta: #e43f5a;
+  --blue-light: #10769E;
+  --magenta-light: #EB1741;
+  --blue-foo: #01A8EB;
+  --yellow: #EBDF17;
 }
 
-/*
-  ========================================
-  Body style
-  ========================================
-*/
+.Body {
+  width: 100%;
+}
 
-body .sect {
-  position: relative;
-  top: 0px;
-  right: 0px;
+.Body .cover {
+  background-color: black;
 
-  min-width: 400px;
-  width: 80vw;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+
+  z-index: -1;
+
   height: 100vh;
+  width: 100%;
 }
 
-/*
-  ----------------
-  about me section style
-  ----------------
-*/
+.Body .cover .Me {
+  width: 50%;
+  height: 100%;
+  /* background-color: chartreuse; */
+  background-image: url('../images/Jonatan\ small.png');
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-body .banner {
-  background-color: #FFF;
+.Body .cover .title {
+  color: #FFF;
+
+  width: 50%;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
+  flex-flow: column;
 }
 
-body .banner .draw {
-  position: relative;
-  left: 10%;
+.Body .cover .title .myself {
+  font-size: 3.5em;
+  font-weight: 500;
 
-  margin: auto 0px;
-  background-color: transparent;
-
-  z-index: 1;
+  width: 100%;
 }
 
-body .banner .circle {
-  width: 150px;
-  height: 150px;
+.Body .cover .title .slogan {
+  width: 90%;
 
-  border-radius: 50%;
-  border: #EEE solid 50px;
+  margin-top: 0px;
 
-  background-color: var(--middle-blue);
-}
-
-
-body .banner .phrase {
-  width: 60%;
-  height: 50%;
-
-  margin: auto;
-  margin-left: 0px;
-  padding: 5%;
-
-  background-color: #EEE;
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 1;
-}
-
-body .banner .phrase p {
-  text-align: left;
-  font-size: 18px;
-
-  margin: 20px;
-
-  color: var(--middle-blue);
-}
-
-body .banner a {
-  position: absolute;
-  bottom: 50px;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: #FFF;
-
-  animation: arrow 1s ease-in-out infinite;
-}
-
-@keyframes arrow {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(0px, 5px);
-  }
-}
-
-body .banner .arrow div {
-  border-radius: 5px;
-  background-color: var(--magenta);
-}
-
-body .banner .arrow .center {
-  position: relative;
-  top: 10px;
-  left: 25px;
-
-  width: 5px;
-  height: 35px;
-}
-
-body .banner .arrow .left {
-  position: absolute;
-  top: 26px;
-  left: 20px;
-
-  width: 5px;
-  height: 25px;
-
-  transform: rotate(-30deg);
-}
-
-body .banner .arrow .right {
-  position: absolute;
-  top: 26px;
-  left: 30px;
-
-  width: 5px;
-  height: 25px;
-
-  transform: rotate(30deg);
-}
-
-/*
-  ----------------
-  experiences section style
-  ----------------
-*/
-
-body .experiences {
-  background-color: rgb(231, 81, 81);
-}
-
-/*
-  ----------------
-  abilities section style
-  ----------------
-*/
-
-body .abilities {
-  background-color: rgb(13, 80, 204);
-}
-
-/*
-  ----------------
-  Projects section style
-  ----------------
-*/
-
-body .Projects {
-  background-color: rgb(204, 13, 118);
-}
-
-/*
-  ----------------
-  contact section style
-  ----------------
-*/
-
-body .contact {
-  background-color: rgb(13, 204, 99);
-  height: 618px;
+  font-size: 1.7em;
+  font-weight: 100;
 }

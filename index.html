@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Jonatan Mazo</title>
   <link rel="icon" type="image/png" href="images/Logo_32x32.png" sizes="32x32">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/Footer.css">
   <link rel="stylesheet" type="text/css" href="css/Header.css">
@@ -20,137 +20,44 @@
 </head>
 
 <body>
-  <!-- HEADER-->
   <header>
-    <div class="Photo"></div>
-    <div class="imgPhoto"></div>
-    <div class="Titles">
-      <h2>Jonatan Mazo</h2>
-      <h1>Full Stack Engimeer</h1>
-    </div>
-    <div class="top"></div>
-
-    <div id="Menu">
-      <ul class="ulMenu">
-        <li>
-          <a class="btnBanner" @mouseover="banner = true" @mouseleave="banner = false" href="#banner">
-            <div class="icon"><div class="imgIcon bannerIcon"></div></div>
-            <transition name="fade">
-              <ul v-if="banner" @click="banner = true">
-                <p>About me</p>
-              </ul>
-            </transition>
-          </a>
-        </li>
-
-        <li>
-          <a class="btnExperiences" @mouseover="experiences = true" @mouseleave="experiences = false" href="#experiences">
-            <div class="icon"><div class="imgIcon experiencesIcon"></div></div>
-            <transition name="fade">
-              <ul v-if="experiences" @click="experiences = true">
-                <p>Experience</p>
-              </ul>
-            </transition>
-          </a>
-        </li>
-
-        <li>
-          <a class="btnAbilities" @mouseover="abilities = true" @mouseleave="abilities = false" href="#abilities">
-            <div class="icon"><div class="imgIcon abilitiesIcon"></div></div>
-            <transition name="fade">
-              <ul v-if="abilities" @click="abilities = true">
-                <p>Skills</p>
-              </ul>
-            </transition>
-          </a>
-        </li>
-
-        <li>
-          <a class="btnProject" @mouseover="project = true" @mouseleave="project = false" href="#projects">
-            <div class="icon"><div class="imgIcon projectIcon"></div></div>
-            <transition name="fade">
-              <ul v-if="project" @click="project = true">
-                <p>Projects</p>
-              </ul>
-            </transition>
-          </a>
-        </li>
-
-        <li>
-          <a class="btnContact" @mouseover="contact = true" @mouseleave="contact = false" href="#contact">
-            <div class="icon"><div class="imgIcon contactIcon"></div></div>
-            <transition name="fade">
-              <ul v-if="contact" @click="contact = true">
-                <p>Contact me</p>
-              </ul>
-            </transition>
-          </a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="menu">
+        <div id="hamburger" onclick="openNav()">
+          <div class="cont">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" class="menulink" onclick="closeNav()">Home</a>
+          <a href="#" class="menulink" onclick="closeNav()">About me</a>
+          <a href="#" class="menulink" onclick="closeNav()">Portfolio</a>
+          <a href="#" class="menulink" onclick="closeNav()">Resume</a>
+          <a href="#" class="menulink" onclick="closeNav()">Contact me</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- BANNER ME -->
-  <div id="banner" class="sect banner">
-    <div class="draw">
-      <div class="circle"></div>
-    </div>
-    <div class="phrase">
-      <p>
-        <b>Hello i'm Jonatan!</b> <br>
-        I'm a Full Stack Software Engineer based in Medellin, Colombia. <br>
-        I am a very calm boy who likes to play musical instruments, play a couple of sports and play video games in my spare time.
-        I really like everything related to physics, the universe, robotics and human thought.
-        I am a great fan of the 3D world, which leads me to practice digital sculpting, polygonal modeling and of course, rendering everything I create in 3D, this leads me to the development of video games, VR / AR and even ArchViz.
-      </p>
-    </div>
-    <a href="#experiences">
-      <div class="arrow">
-        <div class="center"></div>
-        <div class="left"></div>
-        <div class="right"></div>
+  <div class="Body">
+    <div class="cover">
+      <div class="Me"></div>
+      <div class="title">
+        <p class="myself">Hi. I'm Jonatan, <br> a Full Stack software Engineer.</p>
+        <p class="slogan">Focusing on Front-End side of web development, but with all knowledge of architecture of a web app</p>
       </div>
-    </a>
+    </div>
+    <div class="about">
+      LOL
+    </div>
   </div>
-
-  <!-- EXPERIENCES -->
-  <div id="experiences" class="sect experiences"></div>
-
-  <!-- ABILITIES -->
-  <div id="abilities" class="sect abilities"></div>
-
-  <!-- PROJECTS -->
-  <div id="projects" class="sect Projects"></div>
-
-  <!-- CONTACT ME -->
-  <div id="contact" class="sect contact"></div>
 </body>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="social">
-      <p>More about me:</p>
-      <a class="twitter" href="https://twitter.com/JonatanRMC" target="_blank">
-        <div class="btn">
-          <div class="img Twitter"></div>
-        </div>
-      </a>
-      <a class="github" href="https://github.com/MAZTRO" target="_blank">
-        <div class="btn">
-          <div class="img Github"></div>
-        </div>
-      </a>
-      <a class="linkedin" href="https://www.linkedin.com/in/jonatanrmc/" target="_blank">
-        <div class="btn">
-          <div class="img Linkedin"></div>
-        </div>
-      </a>
-    </div>
-    <div class="Sign">
-      <div>
-        <img src="./images/J Logo 60x60.png" alt="Jonatan">
-      </div>
-      <p>Jonatan Mazo | Full Stack Engineer <br> © {{ time }}</p>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer>
+</footer>
 </html>

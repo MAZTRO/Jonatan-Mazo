@@ -1,292 +1,143 @@
 /* Variables of colors */
 :root {
-    --middle-blue: #162447;
-    --dark-blue: #1b1b2f;
-    --light-blue: #1f4068;
-    --magenta: #e43f5a;
-  }
-
-/*
-  ========================================
-  Header style
-  ========================================
-*/
+  --blue-light: #10769E;
+  --magenta-light: #EB1741;
+  --blue-foo: #01A8EB;
+  --yellow: #EBDF17;
+}
 
 header {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  z-index: 100;
-
-  position: fixed;
-  right: 0px;
-
-  min-width: 50px;
-  width: 20vw;
-  height: 100%;
-
-  background-color: var(--middle-blue);
-  /* box-shadow: 0px 10px 10px var(--dark-blue); */
-}
-
-header .top {
-  background-color: var(--middle-blue);
-  width: 65%;
-  height: 35px;
-
-  z-index: 15;
-  position: absolute;
-  top: 160px;
-}
-
-header .Photo {
-  width: 150px;
-  height: 150px;
-  z-index: 10;
-
-  display: flex;
-
-  min-width: 150px;
-  min-height: 150px;
-
-  margin-top: 30px;
-
-  background: #162447;
-  box-shadow:  6px 6px 8px #0c1428,
-               -6px -6px 8px #203466;
-
-  border-radius: 50%;
-}
-
-header .imgPhoto {
-  width: 130px;
-  height: 130px;
-  z-index: 30;
-
-  position: absolute;
-  top: 40px;
-
-
-  margin: auto;
-
-  border-radius: 50%;
-
-  background-image: url('../images/Me.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-
-  transition: .15s;
-}
-
-header .imgPhoto:hover {
-  transform: scale(1.25);
-}
-
-header .Titles {
-  width: 75%;
-  height: 10%;
-
-  min-height: 120px;
-
-  position: relative;
-  top: -20px;
-  z-index: 9;
-
-  color: #FFF;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-
-  background: #162447;
-  box-shadow:  6px 6px 8px #0c1428,
-               -6px -6px 8px #203466;
-
-  border-radius: 20px;
-}
-
-header h1 {
-  font-size: 16px;
-  font-weight: 300;
-
-  margin: 0px;
-  margin-bottom: 30px;
-}
-
-header h2 {
-  z-index: 10;
-
-  position: relative;
-
-  font-size: 1.7rem;
-  font-weight: 100;
-
-  margin: auto;
-  margin-bottom: 5px;
-}
-
-/* ======================================= */
-/* ============ Menu section ============= */
-/* ======================================= */
-
-header #Menu {
-  position: relative;
-
-  width: 80%;
-  height: 50%;
-
-  margin-top: 30px;
-
-  border-top: 1px solid var(--light-blue);
-
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-/*
-  ----------------
-  Scroll Bar
-  ----------------
-*/
-
-#Menu::-webkit-scrollbar
-{
-    width: 5px;
-    background-color: var(--middle-blue);
-}
-
-#Menu::-webkit-scrollbar-thumb
-{
-    border-radius: 3px;
-    background-color: var(--light-blue);
-}
-
-#Menu::-webkit-scrollbar-thumb:hover
-{
-    border-radius: 3px;
-    background-color: var(--magenta);
-}
-
-#Menu::-webkit-scrollbar-thumb:active
-{
-    background-color: var(--magenta);
-}
-
-/*
-  ----------------
-  Scroll Bar
-  ----------------
-*/
-
-header #Menu ul {
-  list-style: none;
-  margin: auto;
-  margin-top: 20px;
-  padding: 0px;
-
-  width: 90%;
-}
-
-header #Menu li {
   width: 100%;
   height: 70px;
 
-  margin: 10px auto;
+  background-color: black;
 }
 
-header #Menu li a {
+header ul, li, a {
   text-decoration: none;
+  list-style: none;
 
+  color: #EEE;
+
+  font-size: 15px;
+  font-weight: 300;
+}
+
+header nav ul {
   display: flex;
+  flex-flow: column;
+}
+
+header .container {
+  width: 95%;
+  height: 100%;
 
   margin: auto;
-  width: 100%;
 
-  border-radius: 50%;
-
-  transition: .5s;
-  /* background-color: #FFF; */
+  display: flex;
+  flex-flow: row;
 }
 
-header #Menu li a:hover {
-  border-radius: 0%;
-}
-
-header #Menu li a .icon {
+header .container .logo {
   width: 60px;
   height: 60px;
 
+  margin: auto;
+  margin-left: 0;
+
+  background-color: #EB1741;
+}
+
+header .container .menu {
+  width: 30%;
+  max-width: 300px;
+
+  margin: auto;
+  margin-right: 0;
+}
+
+header .container .menu #hamburger {
+  width: 50px;
+  height: 50px;
+
+  z-index: 20;
+
+  margin: auto;
+  margin-right: 0;
+
   display: flex;
+  flex-flow: column;
 
+} header .container .menu #hamburger:hover {
+  cursor: pointer;
+}
+
+header .container .menu #hamburger .cont {
   margin: auto;
-
-  border-radius: 50%;
-
-  background: #162447;
-  box-shadow: 3px 3px 5px #0c1428,
-              -3px -3px 5px #203466;
-
-  transition: .5s;
 }
 
-header #Menu li a .icon:active {
-  transform: scale(0.95);
+header .container .menu #hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+
+  margin: 5px auto;
+
+  background-color: #FFF;
 }
 
-header #Menu li a .icon .imgIcon {
-  width: 40px;
-  height: 40px;
+/* The side navigation menu */
+header .container .menu .sidenav {
+  height: 100%;
+  width: 0;
 
-  margin: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
 
-  border-radius: 50%;
-
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center;
+  background-color: rgba(0, 0, 0, .97);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.2s;
 }
 
-header #Menu li a .icon .bannerIcon {
-  background-image: url('../images/about-Icon.png');
+/* The navigation menu links */
+header .container .menu .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+
+  font-size: 25px;
+  color: #BBB;
+
+  display: block;
+  transition: 0.2s;
+  background-color: transparent;
+} header .container .menu .sidenav a:hover {
+  color: #FFF;
 }
 
-header #Menu li a .icon .experiencesIcon {
-  background-image: url('../images/experiences.png');
+header .container .menu .sidenav .menulink {
+  width: 70%;
+  height: 30px;
+
+  margin: 20px;
+  border: 0;
+} header .container .menu .sidenav .menulink:hover {
+  border-bottom: 2px solid var(--blue-foo);
 }
 
-header #Menu li a .icon .abilitiesIcon {
-  background-image: url('../images/skills.png');
+/* Position and style the close button (top right corner) */
+header .container .menu .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  font-size: 48px;
+  margin-left: 50px;
 }
 
-header #Menu li a .icon .projectIcon {
-  background-image: url('../images/deploy.png');
-}
-
-header #Menu li a .icon .contactIcon {
-  background-image: url('../images/contact.png');
-}
-
-header #Menu li ul {
-  list-style: none;
-  margin: auto;
-  padding: 0px;
-
-  width: 50%;
-
-  border-radius: 5px;
-
-  box-shadow: 3px 3px 5px #0c1428,
-              -3px -3px 5px #203466;
-
-  transition: .2s;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: .3s;
-}
-.fade-enter, .fade-leave-active {
-  opacity: 0;
-  transform: scaleX(0);
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
