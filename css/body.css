@@ -45,13 +45,26 @@
   background-position: bottom;
   background-size: 70%;
   background-repeat: no-repeat;
+
+  transition: 0.4s;
+}
+@media screen and (max-height: 850px) {
+  #Body .cover .Me {background-size: 60%;}
+}
+@media screen and (max-height: 660px) {
+  #Body .cover .Me {background-size: 50%;}
+}
+@media screen and (max-height: 460px) {
+  #Body .cover .Me {background-size: 30%;}
 }
 
 #Body .cover .title {
   color: #CCC;
 
-  width: 50%;
+  width: 40%;
   height: 100vh;
+
+  margin: auto;
 
   display: flex;
   justify-content: center;
@@ -123,22 +136,26 @@
 /* ============= */
 
 #Body .about {
-  width: 100%;
+  width: 95%;
   height: 100vh;
 
   background-color: #FFF;
+  background-image: url('../images/bmxWhite.jpg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right;
 
   position: relative;
-  top: 0;
 
   display: flex;
 }
 
 #Body .about .container {
-  width: 80%;
+  width: 70%;
   height: 80%;
 
-  margin: auto;
+  margin-left: 100px;
+  margin-top: 80px;
 
   display: flex;
   flex-flow: column;
@@ -154,6 +171,33 @@
   height: 60px;
 }
 
-#Body .about .container .description {
-  font-size: 2em;
+#Body .about .container .texts {
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  padding: 15px;
+
+  border-radius: 5px;
+  border: 2px solid #555;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+#Body .about .container .texts .description, .knowMe {
+  font-size: 1.5em;
+}
+
+
+
+/* ================= */
+/* Portfolio section */
+/* ================= */
+
+#Body .Portfolio {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+
+  background-color: var(--magenta-light);
 }
