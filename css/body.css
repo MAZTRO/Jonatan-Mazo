@@ -10,6 +10,22 @@
   width: 100%;
 }
 
+#Body h2 {
+  font-size: 4em;
+  font-weight: 500;
+
+  color: #111;
+  padding-top: 100px;
+
+  width: 70%;
+  height: 80px;
+  margin: auto;
+
+  text-align: center;
+
+  border-top: 1px solid #888;
+}
+
 
 /* ============= */
 /* Cover section */
@@ -18,8 +34,9 @@
 #Body .cover {
   background-color: black;
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50% 50%;
 
   position: relative;
   top: 0;
@@ -31,13 +48,14 @@
 }
 
 #Body .cover .Me {
-  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
 
   margin: auto;
   margin-bottom: 0;
 
-  width: 50%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 
   max-width: 900px;
 
@@ -48,21 +66,15 @@
 
   transition: 0.4s;
 }
-@media screen and (max-height: 850px) {
-  #Body .cover .Me {background-size: 60%;}
-}
-@media screen and (max-height: 660px) {
-  #Body .cover .Me {background-size: 50%;}
-}
-@media screen and (max-height: 460px) {
-  #Body .cover .Me {background-size: 30%;}
-}
 
 #Body .cover .title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+
   color: #CCC;
 
-  width: 40%;
-  height: 100vh;
+  width: 80%;
+  height: 100%;
 
   margin: auto;
 
@@ -144,6 +156,7 @@
   margin: auto;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 #Body .about .UXimage {
@@ -176,18 +189,6 @@
   flex-wrap: wrap;
 
   color: #444;
-}
-
-#Body .about .container h2 {
-  font-size: 4em;
-  font-weight: 500;
-
-  color: #111;
-  margin: 0;
-  margin-left: 40px;
-
-  width: 100%;
-  height: 60px;
 }
 
 #Body .about .container .texts {
@@ -286,27 +287,14 @@
   background-color: #FFF;
 }
 
-#Body .Portfolio h2 {
-  font-size: 4em;
-  font-weight: 500;
-
-  color: #111;
-  padding-top: 100px;
-  padding-left: 110px;
-  text-align: left;
-
-  width: 100%;
-  height: 80px;
-}
-
 #Body .Portfolio .gridPort {
   width: 90%;
-  height: 50%;
 
   display: flex;
   flex-wrap: wrap;
 
   margin: auto;
+  margin-bottom: 100px;
 }
 
 #Body .Portfolio .gridPort .project {
@@ -370,4 +358,144 @@
 }
 #Body .Portfolio .gridPort .BinaryTree {
   background-image: url('../images/Projects/BinaryTree.jpg');
+}
+#Body .Portfolio .gridPort .github {
+  background-image: url('../images/Projects/Github.jpg');
+}
+
+
+
+/* ================= */
+/* Contact me section */
+/* ================= */
+
+#Body .contactMe {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #141414;
+
+  display: flex;
+  flex-flow: column;
+}
+
+#Body .contactMe h2 {
+  padding-top: 200px;
+}
+
+#Body .contactMe .sign {
+  width: 100%;
+  height: 80px;
+
+  color: #444;
+
+  margin: auto;
+  margin-bottom: 0;
+
+  text-align: center;
+  font-size: 16px;
+} #Body .contactMe .sign:hover {
+  color: var(--magenta-light);
+}
+
+#Body .contactMe h2 {
+  color: var(--blue-foo);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#Body .contactMe .message {
+  width: 80%;
+  height: 20%;
+
+  border-radius: 5px;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: justify;
+  font-size: 18px;
+}
+
+#Body .contactMe .message p {
+  margin: auto;
+  color: #DDD;
+}
+
+#Body .contactMe .message div {
+  width: 70%;
+
+  display: flex;
+  flex-flow: row;
+
+  margin: 0px auto;
+  padding: 0;
+}
+
+#Body .contactMe .message div i {
+  width: 20px;
+  height: 20px;
+
+  margin: auto;
+  margin-right: 0;
+}
+
+#Body .contactMe .message div p {
+  margin: auto;
+  margin-left: 10px;
+}
+
+#Body .contactMe .socialCont {
+  width: 70%;
+  height: 150px;
+
+  margin: auto;
+  margin-top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#Body .contactMe .socialCont .social {
+  width: 70px;
+  height: 70px;
+
+  margin: 20px;
+  margin-bottom: 0;
+
+  display: flex;
+
+  border-radius: 50%;
+  background: #141414;
+  box-shadow:  5px 5px 5px #000000,
+             -5px -5px 5px #222222;
+} #Body .contactMe .socialCont .social:hover {
+  background: #141414;
+  box-shadow:  5px 5px 5px #0e0e0e,
+             -5px -5px 5px #1d1d1d;
+} #Body .contactMe .socialCont .social:active {
+  transform: scale(0.95);
+}
+
+#Body .contactMe .socialCont svg {
+  fill: #CCC;
+  margin: auto;
+}
+
+#Body .contactMe .socialCont .twitter svg {
+  width: 60px;
+  height: 60px;
+}
+
+#Body .contactMe .socialCont .linkedin svg {
+  width: 60px;
+  height: 60px;
+}
+
+#Body .contactMe .socialCont .github svg {
+  width: 60px;
+  height: 60px;
 }

@@ -34,5 +34,10 @@ for (btn of btnsList) {
       const anchor = document.querySelector('#portfolio');
       scroll.animateScroll(anchor);
     }
+
+    else if (btnClass === 'Contact me') {
+      const anchor = document.querySelector('#contactMe');
+      scroll.animateScroll(anchor);
+    }
   });
 }
