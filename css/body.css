@@ -136,29 +136,45 @@
 /* ============= */
 
 #Body .about {
-  width: 95%;
+  width: 100%;
   height: 100vh;
 
-  background-color: #FFF;
-  background-image: url('../images/bmxWhite.jpg');
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: right;
-
   position: relative;
+
+  margin: auto;
 
   display: flex;
 }
 
+#Body .about .UXimage {
+  z-index: -1;
+  width: 30%;
+  height: 35%;
+  min-width: 450px;
+  min-height: 300px;
+  max-height: 800px;
+
+  margin: auto;
+  margin-right: 40px;
+
+  background-image: url('../images/UX\ white.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #999;
+}
+
 #Body .about .container {
-  width: 70%;
+  width: 60%;
   height: 80%;
 
-  margin-left: 100px;
-  margin-top: 80px;
+  margin: auto;
 
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
+
   color: #444;
 }
 
@@ -167,24 +183,91 @@
   font-weight: 500;
 
   color: #111;
+  margin: 0;
+  margin-left: 40px;
 
+  width: 100%;
   height: 60px;
 }
 
 #Body .about .container .texts {
-  width: 85%;
-  background-color: rgba(255, 255, 255, 0.95);
+  width: 80%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 1);
 
-  padding: 15px;
+  padding: 5em;
+
+  margin-left: 40px;
+  margin-top: 10px;
 
   border-radius: 5px;
-  border: 2px solid #555;
-  border-top: 0px;
-  border-bottom: 0px;
+  box-shadow: 5px 5px 15px #999;
 }
 
 #Body .about .container .texts .description, .knowMe {
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+#Body .about .container .texts .socialCont {
+  width: 20%;
+  height: 60px;
+  min-width: 300px;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#Body .about .container .texts .socialCont a {
+  margin: auto;
+}
+
+#Body .about .container .texts .socialCont a .social {
+  width: 60px;
+  height: 60px;
+
+  background-color: #FFF;
+
+  border-radius: 50%;
+
+  margin: auto;
+} #Body .about .container .texts .socialCont a .social:hover {
+  transform: scale(.95);
+  box-shadow:  5px 5px 10px #d1d1d1,
+             -5px -5px 10px #ffffff;
+}
+
+#Body .about .container .texts .socialCont a .twitter {
+  background-image: url('../images/twitterIcon.svg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+#Body .about .container .texts .socialCont a .linkedin {
+  background-image: url('../images/linkedinIcon.svg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+#Body .about .container .texts .resume {
+  width: 90px;
+  height: 40px;
+
+  outline: none;
+
+  border: none;
+
+  color: white;
+  background-color: var(--magenta-light);
+  transition: 0.15s;
+} #Body .about .container .texts .resume:hover {
+  cursor: pointer;
+} #Body .about .container .texts .resume:active {
+  cursor: pointer;
+  transform: scale(.95);
 }
 
 
@@ -195,9 +278,96 @@
 
 #Body .Portfolio {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
 
-  background-color: var(--magenta-light);
+  background-color: #FFF;
+}
+
+#Body .Portfolio h2 {
+  font-size: 4em;
+  font-weight: 500;
+
+  color: #111;
+  padding-top: 100px;
+  padding-left: 110px;
+  text-align: left;
+
+  width: 100%;
+  height: 80px;
+}
+
+#Body .Portfolio .gridPort {
+  width: 90%;
+  height: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: auto;
+}
+
+#Body .Portfolio .gridPort .project {
+  display: flex;
+
+  width: 450px;
+  height: 250px;
+
+  margin: 10px;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #999;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.15s;
+} #Body .Portfolio .gridPort .project:hover {
+  cursor: pointer;
+  background-size: 0%;
+  background-color: #111;
+}
+
+#Body .Portfolio .gridPort .project p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 300;
+
+  width: 90%;
+  margin: auto;
+
+  opacity: 0;
+
+  transition: 0.25s;
+} #Body .Portfolio .gridPort .project:hover p {
+  opacity: 1;
+  background-color: #111;
+  color: #FFF;
+}
+
+#Body .Portfolio .gridPort .simtac {
+  background-image: url('../images/Projects/SIM-TAC.jpg');
+}
+#Body .Portfolio .gridPort .sortingAlgorithms {
+  background-image: url('../images/Projects/Sorting\ Algorithms.jpg');
+}
+#Body .Portfolio .gridPort .APIAdv {
+  background-image: url('../images/Projects/API.jpg');
+}
+#Body .Portfolio .gridPort .TDD {
+  background-image: url('../images/Projects/TDD.jpg');
+}
+#Body .Portfolio .gridPort .TicTacToe {
+  background-image: url('../images/Projects/TicTacToe.jpg');
+}
+#Body .Portfolio .gridPort .Hashing {
+  background-image: url('../images/Projects/HashTable.jpg');
+}
+#Body .Portfolio .gridPort .SearchAlgorithms {
+  background-image: url('../images/Projects/SearchAlgorithms.jpg');
+}
+#Body .Portfolio .gridPort .BinaryTree {
+  background-image: url('../images/Projects/BinaryTree.jpg');
 }
