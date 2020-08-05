@@ -1,6 +1,6 @@
 /* This File is for use responsive design */
 
-@media all and (max-width: 340px) {
+@media all and (max-width: 750px) {
   #Body .cover .Me {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
