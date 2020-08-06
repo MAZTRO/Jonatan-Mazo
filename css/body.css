@@ -388,6 +388,7 @@
 
 #Body .contactMe h2 {
   padding-top: 200px;
+  margin-bottom: 50px;
 }
 
 #Body .contactMe .sign {
@@ -397,7 +398,7 @@
   color: #444;
 
   margin: auto;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   text-align: center;
   font-size: 16px;
@@ -430,7 +431,7 @@
 }
 
 #Body .contactMe .message div {
-  width: 90%;
+  width: 80%;
 
   display: flex;
   flex-flow: row;
@@ -454,10 +455,8 @@
 
 #Body .contactMe .socialCont {
   width: 70%;
-  max-height: 150px;
 
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto;
 
   display: flex;
   justify-content: center;
