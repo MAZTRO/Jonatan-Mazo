@@ -153,12 +153,16 @@
   position: relative;
 
   margin: auto;
-  margin-bottom: 150px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+
+  background-image: url('../images/bacgroud.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #Body .about h2 {
@@ -169,6 +173,7 @@
   width: 80%;
 
   margin: 0 auto;
+  margin-bottom: 150px;
 
   display: flex;
   flex-wrap: wrap;
@@ -285,6 +290,10 @@
   background-color: #FFF;
 }
 
+#Body .Portfolio h2 {
+  border-top: 0;
+}
+
 #Body .Portfolio .gridPort {
   width: 90%;
 
@@ -399,12 +408,10 @@
 #Body .contactMe h2 {
   color: var(--blue-foo);
   margin-top: 0;
-  margin-bottom: 10px;
 }
 
 #Body .contactMe .message {
   width: 80%;
-  height: 20%;
 
   border-radius: 5px;
 
@@ -447,10 +454,10 @@
 
 #Body .contactMe .socialCont {
   width: 70%;
-  height: 150px;
+  max-height: 150px;
 
   margin: auto;
-  margin-top: 0;
+  margin-top: 20px;
 
   display: flex;
   justify-content: center;
@@ -481,19 +488,7 @@
 #Body .contactMe .socialCont svg {
   fill: #CCC;
   margin: auto;
-}
 
-#Body .contactMe .socialCont .twitter svg {
-  width: 60px;
-  height: 60px;
-}
-
-#Body .contactMe .socialCont .linkedin svg {
-  width: 60px;
-  height: 60px;
-}
-
-#Body .contactMe .socialCont .github svg {
   width: 60px;
   height: 60px;
 }
