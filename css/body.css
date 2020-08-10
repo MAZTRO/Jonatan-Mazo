@@ -157,6 +157,8 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+
+  background-color: #FFF;
 }
 
 #Body .about h2 {
@@ -399,7 +401,7 @@
 
 #Body .contactMe {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   background-color: #141414;
 
@@ -408,17 +410,18 @@
 }
 
 #Body .contactMe h2 {
-  padding-top: 200px;
+  padding-top: 150px;
   margin-bottom: 50px;
 }
 
 #Body .contactMe .sign {
   width: 100%;
-  height: 80px;
+  height: 60px;
 
   color: #444;
 
   margin: auto;
+  margin-bottom: 0;
 
   text-align: center;
   font-size: 16px;
