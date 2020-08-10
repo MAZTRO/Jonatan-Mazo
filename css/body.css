@@ -484,8 +484,8 @@
 }
 
 #Body .contactMe .socialCont .social {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 
   margin: 20px;
   margin-bottom: 0;
@@ -495,10 +495,10 @@
   border-radius: 50%;
   background: #141414;
   box-shadow:  5px 5px 5px #000000,
-             -5px -5px 5px #222222;
+             -5px -5px 5px #272727;
 } #Body .contactMe .socialCont .social:hover {
   background: #141414;
-  box-shadow:  5px 5px 5px #0e0e0e,
+  box-shadow:  5px 5px 5px #0a0a0a,
              -5px -5px 5px #1d1d1d;
 } #Body .contactMe .socialCont .social:active {
   transform: scale(0.95);
@@ -508,6 +508,6 @@
   fill: #CCC;
   margin: auto;
 
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
