@@ -58,7 +58,7 @@
     margin: 0px auto;
   }
 
-  #Body .about .container .texts a {
+  #Body .about .container .texts .description a {
     margin: 10px auto;
   }
 
@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  #Body .about .container .texts {
+    width: 90%;
+  }
 
   #Body .Portfolio .gridPort .project {
     width: 320px;

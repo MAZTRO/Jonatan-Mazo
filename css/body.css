@@ -177,17 +177,17 @@
   flex-wrap: wrap;
 
   color: #AAA;
+
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #AAA;
 }
 
 #Body .about .container .texts {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  background-color: #222;
 
   margin: auto;
-
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px #CCC;
 
   display: flex;
   flex-flow: column;
@@ -215,7 +215,7 @@
 
 #Body .about .container .texts .socialCont a {
   margin: auto;
-  
+
   width: 60px;
   height: 60px;
 
