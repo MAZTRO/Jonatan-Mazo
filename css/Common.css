@@ -6,6 +6,10 @@
     --yellow: #EBDF17;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*
   ========================================
